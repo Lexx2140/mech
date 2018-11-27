@@ -1,0 +1,12 @@
+User-agent: *
+
+Disallow: /admin
+Disallow: /dash
+Disallow: /cache
+Disallow: /mech
+Disallow: /logs
+
+Disallow: /assets/tpl
+Disallow: /assets/upload
+
+Sitemap: sitemap-index.xml

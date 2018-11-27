@@ -1,0 +1,106 @@
+/*Pagination style*/
+
+.uk-pagination {
+    color: #045C71;
+    padding-left: 0;
+    font-family: "RobotoCondensed-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  /* 1 */
+  padding: 0;
+  list-style: none;
+  /* 2 */
+  text-align: center;
+  /* 3 */
+  font-size: 18px;
+}
+/*
+ * Micro clearfix
+ * Needed if `uk-pagination-previous` or `uk-pagination-next` sub-objects are used
+ */
+.uk-pagination:before,
+.uk-pagination:after {
+  content: "";
+  display: table;
+}
+.uk-pagination:after {
+  clear: both;
+}
+
+.uk-pagination > li {
+  display: inline-block;
+  font-size: 18px;
+  vertical-align: top;
+}
+
+
+.uk-pagination > li:nth-child(n+2) {
+  margin-left: 5px;
+}
+
+.uk-pagination > li > a,
+.uk-pagination > li > span {
+  display: inline-block;
+  border-radius: 50%;
+  border: 2px solid #6CC0AD;
+  min-width: 16px;
+  padding: 5px 7px;
+  line-height: 20px;
+  background-color: #fff;
+  text-decoration: none;
+  /* 1 */
+  box-sizing: content-box;
+  /* 2 */
+  text-align: center;
+}
+/*
+ * Links
+ */
+.uk-pagination > li > a {
+  border: 2px solid #045C71;
+  color: #045C71;
+}
+/*
+ * Hover
+ * 1. Apply hover style also to focus state
+ * 2. Remove default focus style
+ */
+.uk-pagination > li > a:hover,
+.uk-pagination > li > a:focus {
+  background-color: #3BA99B;
+  border: 2px solid #3BA99B;
+  color: #fff;
+  outline: none;
+}
+/* OnClick */
+.uk-pagination > li > a:active {
+  background-color: #6CC0AD;
+  color: #fff;
+}
+/*
+ * Active
+ */
+.uk-pagination > .uk-active > span {
+  background: #6CC0AD;
+  color: #fff;
+}
+
+/* Previous and next navigation
+ ========================================================================== */
+.uk-pagination-previous {
+  float: left;
+   border-radius: 50%;
+  background-color: #fff;
+}
+.uk-pagination-next {
+  float: right;
+}
+/* Alignment modifiers
+ ========================================================================== */
+.uk-pagination-left {
+  text-align: left;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.uk-pagination-right {
+  text-align: right;
+  border-radius: 50%;
+}

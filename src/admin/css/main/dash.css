@@ -1,0 +1,262 @@
+html {
+    min-height: 100vh;
+    overflow-y: scroll;
+}
+
+.hidden {
+    display: none;
+}
+
+.inactive {
+    background: #d5d5d5;
+}
+
+.mech-dash {
+    background-color: #f5f5f5;
+}
+
+.mech-box {
+    background: #fff;
+    padding: 15px;
+}
+
+
+
+/*Menu(s)*/
+
+.mech-sidebar {
+    background: #333;
+    min-height: 100vh;
+}
+
+.mech-top-menu {
+    align-items: center;
+    background: #555;
+    display: flex;
+    height: 40px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.mech-top-menu a {
+	font-size: 1.5em;
+}
+
+.mech-dash-menu .active {
+    background: #222;
+
+}
+
+
+/*Table(s)*/
+
+.mech-table {
+    border: 1px solid #E0E0E0;
+    background: #fff;
+
+}
+
+.mech-table tr,
+.mech-cat-table tr {
+    border: 1px solid #CCC;
+}
+
+.mech-table th {
+    background: #E0E0E0;
+}
+
+.mech-table a {
+    text-decoration: none;
+}
+
+.mech-table tbody,
+.mech-cat-table tbody {
+    cursor: pointer;
+}
+
+.mech-cat-table thead {
+    background: #e0e0e0;
+}
+
+.mech-cat-table tbody td {
+    border: 1px solid #CCC;
+    padding: 0 !important;
+}
+
+.mech-cat-table a {
+    display: block;
+    padding: 8.8px;
+    text-decoration: none;
+    color: #444;
+}
+
+.mech-active-td td {
+    background-color: #555;
+    border-color: #555;
+}
+
+.mech-active-td a {
+    color: #fff;
+    transition: all .1s ease;
+}
+
+
+
+/*File upload placeholder*/
+
+.mech-placeholder {
+    border: 2px dashed #CBCBCB;
+    margin: 15px 0;
+    padding: 10px;
+    text-align: center;
+}
+
+
+/*Image preview placeholder*/
+
+.mech-img-preview {
+    margin-top: 15px;
+    position: relative;
+}
+
+.mech-img-preview img {
+    position: absolute;
+}
+
+.mech-crop {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+
+
+
+
+/*Preloader*/
+
+.mech-preloader {
+    background: #333;
+    color: #fff;
+    left: 0;
+    padding: 3px;
+    position: fixed;
+    right: 0;
+    text-align: center;
+    top: 0;
+    z-index: 1000;
+}
+
+.mech-icon-button {
+    background: transparent;
+}
+
+.mech-badge {
+    background: #444;
+    color: #fff;
+    font-size: 0.8em;
+    padding: 0 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.mech-info {
+    background: #222;
+    bottom: 0;
+    padding: 10px 0;
+    position: fixed;
+    text-align: center;
+    width: 16.6%;
+}
+
+.mech-info summary {
+    cursor: pointer;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, .3);
+    outline: none;
+}
+
+.order-icon {
+    font-size: 5em;
+}
+
+
+
+/*Adapted uikit*/
+
+.uk-navbar {
+    background: #E0E0E0;
+}
+
+.uk-navbar-nav > li.uk-active > a {
+	background-color: #fff;
+}
+
+.uk-icon-hover:hover {
+    cursor: pointer;
+}
+
+.uk-form-row label,
+.uk-form-label {
+    text-align: right;
+}
+
+.uk-tab {
+    text-transform: uppercase;
+}
+
+.uk-tab > li.uk-active > a {
+		color: #444;
+    font-weight: bolder;
+		background-color: #e0e0e0
+}
+
+.uk-accordion-title {
+		color: #444;
+    text-transform: uppercase;
+    font-weight: bolder;
+    font-size: 1em;
+}
+
+
+/*Toggle icon*/
+.tf-toggle-icon {
+    color: #bbb;
+    cursor: pointer;
+    font-size: 200%;
+    vertical-align: -16%;
+}
+
+.on {
+    color: #8cc14c;
+}
+
+
+details {
+    overflow: hidden;
+    transition: height .5s ease;
+}
+
+details:not([open]) {
+    height: 1.5em;
+}
+
+details[open] {
+    height: 8em;
+}
+
+details[open] summary~* {
+    animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+    0% {
+        margin-left: -10px;
+        opacity: 0;
+    }
+
+    100% {
+        margin-left: 0;
+        opacity: 1;
+    }
+}

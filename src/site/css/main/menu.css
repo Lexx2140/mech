@@ -1,0 +1,106 @@
+    /*Mobile menu*/
+
+.el-mob-menu {
+    width: 100vw;
+    height: 50px;
+    background: rgba(255, 255, 255, .9);
+    top: 0;
+    position: absolute;
+    z-index: 9999;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mob-nav-left {
+    align-items: center;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
+    width: 75%;
+}
+
+.mob-nav-right {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+.mob-nav-right i {
+    color: #6CC0AD;
+    cursor: pointer;
+    font-size: 2em;
+    position: fixed;
+}
+
+.mob-nav-right i:hover {
+    color: #045C71;
+    text-decoration: none;
+}
+
+@media screen and (min-width:768px) {
+    .logo-header {
+        height: 75px;
+        height: 60%;
+        padding-left: 75px;
+        width: 60%;
+    }
+}
+
+.el-offcanvas-bar {
+    background: linear-gradient(#DEE0E0, #fff);
+    height: 100vh;
+    position: fixed;
+    width: 100vw;
+    right: 0;
+    z-index: 9999;
+  }
+
+.el-offcanvas-bar ul {
+    cursor: pointer;
+    list-style: none;
+    margin-top: 50px;
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.el-offcanvas-bar li a {
+    display: block;
+    color: #045C71;
+    font-size: 2em;
+    font-weight: 700;
+    font-family: "RobotoCondensed-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    line-height: 2;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    text-align: center;
+}
+
+.el-offcanvas-bar li a:hover,
+.el-offcanvas-bar li a:focus {
+    color: #6CC0AD;
+}
+
+.el-navbar li .active {
+    color: #6CC0AD;
+}
+
+.mob-close-btn {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+
+.mob-close-btn i {
+    color: #045C71;
+    font-size: 2em;
+    cursor: pointer;
+}
+.mob-close-btn i:hover {
+    text-decoration: none;
+    color: #6CC0AD;
+}

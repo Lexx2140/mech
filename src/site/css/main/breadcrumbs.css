@@ -1,0 +1,32 @@
+/*Breadcrumbs style*/
+
+.el-breadcrumbs {
+    color: #045C71;
+    font-family: "RobotoCondensed-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    padding: 0
+}
+
+.el-breadcrumbs a {
+    color: #6CC0AD;
+    text-decoration: none;
+}
+
+.el-breadcrumbs a:hover {
+    color: #3BA99B;
+}
+
+.el-breadcrumbs>li {
+    font-size: 1.5em;
+    vertical-align: top;
+}
+
+.el-breadcrumbs>li,
+.el-breadcrumbs>li>a,
+.el-breadcrumbs>li>span {
+    display: inline-block;
+}
+
+.el-breadcrumbs>li:nth-child(n+2):before {
+    content: "/";
+    display: inline-block;
+}

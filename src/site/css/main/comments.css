@@ -1,0 +1,97 @@
+/*Input label*/
+
+.el-comment-label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #045C71;
+    text-transform: uppercase;
+    font-family: "RobotoCondensed-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+
+.el-comments ul {
+    padding: 0;
+}
+
+
+.el-comments ul>li {
+    list-style: none;
+    margin-top: 15px;
+}
+
+
+@media screen and (min-width:768px) {
+    .el-comments ul>li {
+        padding-left: 30px;
+        list-style: none;
+        margin-top: 15px;
+    }
+}
+
+
+/*Users Comment view*/
+
+.el-comment {
+    background: #045C71;
+    box-sizing: border-box;
+    border-radius: 40px 0 40px 0;
+    padding: 35px;
+}
+
+
+.el-comment li {
+    list-style-type: none;
+}
+
+
+.el-comment label {
+    color: #fff;
+}
+
+
+/*Users Comment Text*/
+
+.el-comment-title {
+    color: #fff;
+    font-size: 1.3em;
+    line-height: normal;
+    font-family: "RobotoCondensed-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+
+.el-comment-meta {
+    color: #fff;
+    font-size: 1em;
+    line-height: normal;
+    font-family: "RobotoCondensed-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+
+.el-comment-body {
+    color: #fff;
+    padding: 10px 50px 10px 0;
+    font-size: 1.1em;
+    line-height: normal;
+    font-family: "RobotoCondensed-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+
+@media screen and (min-width:768px) {
+    #commentDIV {
+        padding: 0;
+    }
+}
+
+
+.el-comment-form {
+    padding: 0;
+    margin: 0 auto;
+}
+
+
+@media screen and (min-width:768px) {
+    .el-comment-form {
+        /*padding: 25px;*/
+    }
+}

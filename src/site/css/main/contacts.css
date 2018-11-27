@@ -1,0 +1,93 @@
+.el-contacts {
+    min-height: 100vh;
+    background: linear-gradient(top, #DEE0E0, #fff);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+.el-footer-map {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+
+.el-footer-map iframe {
+    height: calc(100vh + 50px);
+    width: 100vw;
+    position: absolute;
+    bottom: 0;
+}
+
+
+@media screen and (min-width:768px) {
+    .el-footer-map iframe {
+        height: calc(100vh + 75px);
+        width: calc(100vw + 25px + 50%);
+        position: absolute;
+        z-index: 1;
+    }
+}
+
+
+.el-contacts-bg {
+    background: url('../../img/bg/grass.svg') no-repeat center bottom, linear-gradient(#045c71, transparent),
+    linear-gradient(to top right, #6CC0AD, transparent),
+    linear-gradient(to top left, #045c71, transparent);
+    background-blend-mode: unset;
+    height: 100vh;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+
+@media screen and (min-width:768px) {
+    .el-contacts-bg {
+        background: url('../../img/tree.svg') no-repeat center bottom, linear-gradient(#045c71, transparent),
+    linear-gradient(to top right, #6CC0AD, transparent),
+    linear-gradient(to top left, #045c71, transparent);
+    background-blend-mode: unset;
+        background-size: 80%, auto, auto, auto;
+        position: absolute;
+        right: calc(50% - 25px);
+    }
+}
+
+
+.contacts {
+    margin-top: 70px;
+}
+
+
+.contacts i {
+    font-size: 3em;
+    color: #fff;
+}
+
+
+.el-contacts-tree {
+    position: absolute;
+    height: 55%;
+    width: 80%;
+    bottom: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.el-social {
+    margin-top: 30px;
+    padding-left: 30px;
+}

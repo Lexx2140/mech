@@ -1,0 +1,1 @@
+<i class="uk-icon-justify uk-icon-<?php echo $icon; ?>"></i>&nbsp;

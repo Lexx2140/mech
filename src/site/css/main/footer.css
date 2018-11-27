@@ -1,0 +1,137 @@
+footer {
+    background: url('../../img/bg/grass.svg') no-repeat center bottom fixed, linear-gradient(#045c71, transparent),
+        linear-gradient(to top right, #6CC0AD, transparent),
+        linear-gradient(to top left, #045c71, transparent);
+    background-blend-mode: unset;
+    background-size: auto 30%, cover, cover, cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+.el-footer {
+    padding-top: 50px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 150px;
+}
+
+@media screen and (min-width: 768px) {
+		.el-footer {
+			padding-bottom: 0;
+		}
+}
+
+.el-form {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 40px 0 40px 0;
+    box-shadow: 3px 3px 10px rgba(4, 92, 113, .5);
+    padding-top: 35px;
+    padding-bottom: 40px;
+}
+
+.el-form input,
+textarea {
+    border: 1px solid #045C71;
+    box-sizing: border-box;
+    color: #045C71;
+    display: block;
+    font-family: "RobotoCondensed-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+}
+
+.el-form textarea {
+    min-height: 150px;
+}
+
+.el-form input::placeholder,
+.el-form textarea::placeholder {
+    text-transform: uppercase;
+}
+
+.form-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.form-container button {
+    margin-left: auto;
+    display: block;
+}
+
+.el-footer-contacts {
+    height: 100%;
+
+}
+
+.el-footer-contacts i {
+    font-size: 2em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contacts i {
+    font-size: 2em;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contacts a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.el-footer-contacts a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+.createdby {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    text-align: center;
+    width: 100%;
+}
+
+
+.el-footer-blocks {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.el-footer-blocks i {
+    color: #045C71;
+    font-size: 2em;
+}
+
+
+
+.el-footer-blocks div {
+    padding: 7px;
+    text-align: center;
+}
+
+.el-footer-envelope a[href^="mailto:"] {
+    text-decoration: none;
+    font-size: 2em;
+    color: #045C71;
+}
+
+.el-footer-envelope a[href^="mailto:"]:before {
+    font-family: FontAwesome;
+    content: "\f0e0";
+}

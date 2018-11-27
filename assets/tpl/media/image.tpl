@@ -1,0 +1,1 @@
+<img src="<?php echo $src; ?>" alt="<?php echo $title; ?>" title="<?php echo $title; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>">

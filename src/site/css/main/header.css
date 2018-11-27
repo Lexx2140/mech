@@ -1,0 +1,71 @@
+.el-top {
+    background: #fff;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, .3);
+    width: 100vw;
+    height: 75px;
+    top: 0;
+    position: fixed;
+    z-index: 3;
+}
+
+.logo-header {
+    height: 60%;
+    width: 60%;
+}
+
+.el-navbar {
+    height: 75px;
+    padding: 0 75px;
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.el-navbar li {
+    float: right;
+    padding: 25px 20px;
+}
+
+.el-navbar li a {
+    display: block;
+    color: #045C71;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: "RobotoCondensed-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    line-height: normal;
+    text-transform: uppercase;
+    position: relative;
+    transition: 0.5s;
+}
+
+.el-navbar li a:hover {
+    color: #6CC0AD;
+}
+
+.el-navbar a:after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 1px;
+    width: 0;
+    border-bottom: 4px solid #6CC0AD;
+    transition: 0.4s;
+}
+
+.el-navbar a:hover:after {
+    width: 100%;
+}
+
+.el-navbar li .active {
+    color: #6CC0AD;
+}
+
+.mob-menu li .active {
+    color: #6CC0AD;
+}
+
+

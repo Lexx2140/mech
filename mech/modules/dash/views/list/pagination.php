@@ -1,0 +1,1 @@
+<ul class="uk-pagination" data-uk-pagination="{items:<?php echo $count; ?>, itemsOnPage:<?php echo $per_page; ?>}"></ul>

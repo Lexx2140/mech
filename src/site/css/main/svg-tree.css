@@ -1,0 +1,89 @@
+/*SVG TREE*/
+
+.el-tree-div {
+    position: relative;
+}
+
+.el-tree {
+    bottom: 10vh;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 90%;
+}
+
+.el-tree:hover .leaves {
+		transform: scale(1.02);
+}
+
+.el-tree:hover .stem {
+		transform: scale(1.01);
+}
+
+@media screen and (min-width:768px) {
+    .el-tree {
+        bottom: 0;
+        height: 85%;
+    }
+
+    .el-tree-fallen {
+        height: 70%;
+    }
+}
+
+.el-tree .leaves {
+		transform-origin: 0 0;
+    fill: #6CC0AD;
+    fill-opacity: 0;
+    z-index:2000;
+    transition: .8s ease;
+    animation: svg-leaves 5s linear forwards;
+}
+
+.el-tree .stem {
+    fill: #045C71;
+    fill-opacity: 0;
+    stroke-dasharray: 77654;
+    stroke-linecap: round;
+    stroke: #045C71;
+    transition: .5s ease-in-out;
+    animation: svg-stem 5s linear forwards;
+}
+
+
+@keyframes svg-leaves {
+    0% {
+        fill-opacity: 0;
+    }
+
+    50% {
+        fill-opacity: 0;
+    }
+
+    100% {
+        fill-opacity: 1;
+    }
+}
+
+@keyframes svg-stem {
+    0% {
+        stroke: #6CC0AD;
+        stroke-dashoffset: 77000;
+        stroke-opacity: 0;
+        stroke-width: 150;
+    }
+
+    50% {
+        fill-opacity: 0;
+    }
+
+    80% {
+        stroke-dashoffset: 0;
+        stroke-opacity: 1;
+        stroke-width: 0;
+    }
+
+    100% {
+        fill-opacity: 1;
+    }
+}

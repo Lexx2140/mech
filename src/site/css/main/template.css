@@ -1,0 +1,486 @@
+body {
+    overflow-x: hidden
+}
+
+
+/*First screen*/
+
+.el-dark-bg {
+    min-height: 100vh;
+    background: url('../../img/bg/grass.svg') no-repeat center bottom,
+        linear-gradient(#045c71, transparent),
+        linear-gradient(to top right, #6CC0AD, transparent),
+        linear-gradient(to top left, #045c71, transparent);
+    background-size: auto 20%, auto, auto, auto;
+    background-blend-mode: unset;
+    position: relative;
+}
+
+
+@media screen and (min-width:768px) {
+    .el-dark-bg {
+        min-height: 100vh;
+        background: url('../../img/bg/grass.svg') no-repeat center bottom fixed,
+            linear-gradient(#045c71, transparent),
+            linear-gradient(to top right, #6CC0AD, transparent),
+            linear-gradient(to top left, #045c71, transparent);
+        background-blend-mode: unset;
+        background-size: auto 20%, auto, auto, auto;
+        position: relative;
+    }
+}
+
+/*Error 404*/
+
+.error404 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    background: url('../../img/bg/fallen-tree.svg') no-repeat center bottom,
+        url('../../img/bg/grass.svg') no-repeat center bottom,
+        linear-gradient(#045c71, transparent),
+        linear-gradient(to top right, #6CC0AD, transparent),
+        linear-gradient(to top left, #045c71, transparent);
+    background-blend-mode: unset;
+}
+
+.el-text-block,
+.el-text-block-left {
+    min-height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media screen and (min-width:768px) {
+    .el-text-block-left {
+        min-height: 100vh;
+    }
+}
+
+
+.el-text-block-left>div {
+    position: relative;
+}
+
+
+@media screen and (min-width:768px) {
+    .el-text-block-left>div {
+        padding-left: 50px;
+        justify-content: flex-end;
+    }
+}
+
+
+@media screen and (min-width:768px) {
+    .el-text-block>div {
+        padding-right: 50px;
+    }
+}
+
+
+
+/*About us second screen*/
+
+.el-light-bg {
+    min-height: 100vh;
+    position: relative;
+    background: url('../../img/white_tree_one.svg') no-repeat left 50px bottom fixed, linear-gradient(#DEE0E0, #fff);
+    background-size: 70vh;
+}
+
+
+.el-aboutus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.el-text-border-bottom {
+    border-bottom: 4px solid #045C71;
+}
+
+
+@media screen and (min-width:768px) {
+    .el-text-border-bottom {
+        border-bottom: none;
+    }
+}
+
+
+@media screen and (min-width:768px) {
+    .el-text-border {
+        border-left: 4px solid #045C71;
+    }
+}
+
+
+
+/*Services*/
+
+.el-services {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.el-services p {
+    position: relative;
+    text-align: left;
+}
+
+
+.el-services-icon {
+    width: 40%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
+    border-radius: 50%;
+    margin: 20px 0 20px 0;
+}
+
+
+.el-services-icon img {
+    text-align: center;
+    position: absolute;
+}
+
+
+@media screen and (min-width:768px) {
+    .el-services-icon {
+        width: 85%;
+    }
+}
+
+
+
+
+/*Blog screen*/
+
+.el-blog {
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.el-blog-land {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    /*width: 100%;*/
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, .3);
+    border-bottom: 4px solid #6CC0AD;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width:768px) {
+    .el-blog-land {
+        box-shadow: none;
+    }
+}
+
+
+.el-blog-title {
+    overflow-x: hidden;
+    min-height: 130px;
+    width: 100%;
+    padding: 15px 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.el-blog-text {
+    padding: 10px 20px;
+}
+
+
+.el-blog-btn {
+    padding: 40px;
+}
+
+
+.all-artcl {
+    text-align: center;
+}
+
+
+.lx-article-text {
+    padding: 20px 20px;
+}
+
+
+@media screen and (min-width:768px) {
+    .lx-article-text {
+        padding: 60px 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .el-article-mob {
+        padding: 20px 20px;
+    }
+}
+
+/*Buttons*/
+
+.el-btn {
+    font-family: "RobotoCondensed-Regular", -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    cursor: pointer;
+    color: #045C71;
+    padding: 7px 10px;
+    font-size: 16px;
+    font-weight: 500;
+    display: inline;
+    border: 2px solid #6CC0AD;
+    text-transform: uppercase;
+    transition: .8s;
+}
+
+
+.el-btn:hover {
+    text-decoration: none;
+    border-radius: 0;
+}
+
+
+@media screen and (min-width:768px) {
+    .el-btn {
+        padding: 8px 12px;
+        font-size: 18px;
+    }
+}
+
+
+.el-mint-btn {
+    background: #6CC0AD;
+    transition: background 1s, color 0.5s, border 1s;
+    border-radius: 20px 0 0 0;
+    transition: .8s;
+}
+
+
+.el-mint-btn-two {
+    background: #6CC0AD;
+    transition: background 1s, color 0.5s, border 1s;
+    border-radius: 20px 0 20px 0;
+    transition: .8s;
+}
+
+
+.el-mint-btn:hover,
+.el-mint-btn-two:hover {
+    background: #3BA99B;
+    border: 2px solid #+;
+    color: #fff;
+    border-radius: 0;
+}
+
+
+.el-transparent-btn {
+    background: #fff;
+    transition: background 1s, color 0.5s;
+    border-radius: 0 0 20px 0;
+    border: 2px solid #6CC0AD;
+    transition: .8s;
+}
+
+
+.el-transparent-btn-two {
+    background: #fff;
+    transition: background 1s, color 0.5s;
+    border-radius: 20px 0 20px 0;
+    border: 2px solid #6CC0AD;
+    transition: .8s;
+}
+
+
+.el-transparent-btn:hover,
+.el-transparent-btn-two:hover {
+    background: #3BA99B;
+    color: #fff;
+    border: 2px solid #3BA99B;
+    border-radius: 0;
+}
+
+.first-screen-btn {
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 5vh;
+    z-index: 999;
+    text-align: center;
+}
+
+
+@media screen and (min-width:768px) {
+    .first-screen-btn {
+        justify-content: flex-start;
+        left: 0;
+        transform: translateX(0);
+        align-items: center;
+        position: relative;
+        bottom: 0;
+        margin: 0;
+    }
+}
+
+
+
+/*Go Top button*/
+
+.el-gotop {
+    cursor: pointer;
+    position: fixed;
+    display: none;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 15px 0 15px 0;
+    background: rgba(108, 192, 173, 0.4);
+    text-align: center;
+    transition: .4s;
+}
+
+
+.el-gotop i {
+    color: rgba(255, 255, 255, 0.8);
+    padding: 10px 10px;
+    font-size: 18px;
+}
+
+
+.el-gotop:hover {
+    background: #3BA99B;
+    border-radius: 0;
+}
+
+
+
+
+
+/*Blog page*/
+
+.el-blog-page {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.el-blog-artcl {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+
+
+/*Article page*/
+
+.el-article {
+    min-height: 100vh;
+    margin: 0 auto;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    position: relative;
+    padding: 20px;
+}
+
+
+.main-container {
+    padding: 90px 0;
+}
+
+
+
+
+/*Social icons*/
+
+.el-social-icon i {
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.5em;
+    position: relative;
+    margin: 0 auto;
+    top: 20%;
+}
+
+
+.el-social-icon {
+    background: #045C71;
+    border-radius: 50%;
+    display: block;
+    height: 35px;
+    width: 36px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all ease 400ms;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.el-social-icon:hover {
+    box-sizing: border-box;
+    background: #6CC0AD;
+}
+
+
+@media screen and (min-width:768px) {
+    .el-social-icon {}
+}
+
+
+.uk-notify {
+    top: 50%;
+    left: 50%;
+    transform: translateY(-25%);
+    text-align: center;
+}
+
+
+
+
+/*Slide nav*/
+
+.el-slidenav {
+    position: absolute;
+    top: 20%;
+    color: #045C71;
+    font-size: 4em;
+}
+
+
+.el-slidenav:focus,
+.el-slidenav:hover {
+    outline: 0;
+    text-decoration: none;
+    color: #02495A;
+    cursor: pointer
+}

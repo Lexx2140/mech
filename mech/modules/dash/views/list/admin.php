@@ -1,0 +1,1 @@
+<iframe class="uk-height-viewport uk-width-1-1" src="<?php echo base_url(); ?>"></iframe>

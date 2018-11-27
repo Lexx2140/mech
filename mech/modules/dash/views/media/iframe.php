@@ -1,0 +1,1 @@
+<iframe style="width:100%;height:50vh;" src="<?php echo $src ?>"></iframe>

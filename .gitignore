@@ -1,0 +1,5 @@
+### Ignore test folder
+node_modules/
+
+### Ignore package lock
+package-lock.json
